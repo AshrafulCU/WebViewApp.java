@@ -20,7 +20,6 @@
 
       android:indeterminateTint="@color/white"
       android:layout_gravity="center"
-      android:paddingTop="10dp"
       android:visibility="gone"
       android:background="#00873E"
 
@@ -43,7 +42,7 @@
 
   <WebView
       android:layout_width="match_parent"
-      android:layout_height="wrap_content"
+      android:layout_height="match_parent"
       android:id="@+id/webView"
       android:layout_below="@+id/lottieAnimationView"
 

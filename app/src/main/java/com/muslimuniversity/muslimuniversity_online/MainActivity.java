@@ -75,7 +75,8 @@ public class MainActivity extends AppCompatActivity {
                 public boolean shouldOverrideUrlLoading(WebView view, String url) {
                     if (url.startsWith("whatsapp://") || url.contains("facebook.com") ||
                             url.contains("youtube.com") || url.contains("linkedin.com") ||
-                            url.startsWith("twitter://") || url.contains("telegram.me") || url.contains("t.me")) {
+                            url.startsWith("twitter://") || url.contains("telegram.me") || url.contains("t.me")
+                            || url.startsWith("tel:") || url.startsWith("mailto:") ) {
 
                         openUrlWithIntent(url, " App not installed for this URL.");
                         return true;
